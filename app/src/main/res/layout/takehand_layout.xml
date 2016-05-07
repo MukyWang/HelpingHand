@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-   <fragment android:id="@+id/gmap"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       class="com.google.android.gms.maps.MapFragment">
-   </fragment>
+
+    <fragment
+        android:layout_width="188dp"
+        android:layout_height="231dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/gmap"
+        android:layout_gravity="center"
+        tools:layout="@layout/takehand_layout" />
 </FrameLayout>
