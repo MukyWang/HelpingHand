@@ -1,13 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="handyfeed"
-        android:id="@+id/textView2"
-        android:layout_marginTop="153dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout android:id="@+id/s_food"
+                    android:background="@drawable/card_avatar_bar"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="0dp" android:id="@+id/FoodResource" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_1" android:layout_marginLeft="@dimen/keyline_1" android:text="Food Resource" android:layout_gravity="center_vertical"  android:drawableLeft="@drawable/icon_food" android:drawablePadding="@dimen/keyline_1" android:textColor="#0b8f8f"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_global_arrow_right_2px" android:drawablePadding="@dimen/keyline_1" android:layout_gravity="center_vertical" android:layout_marginRight="@dimen/keyline_1"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/s_shelter" android:background="@drawable/card_avatar_bar"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"  >
+                    <TextView android:layout_width="0dp" android:id="@+id/Shelter" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_1" android:layout_marginLeft="@dimen/keyline_1" android:text="Shelter" android:layout_gravity="center_vertical"  android:drawableLeft="@drawable/icon_shelter" android:drawablePadding="@dimen/keyline_1" android:textColor="#0b8f8f"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_global_arrow_right_2px" android:drawablePadding="@dimen/keyline_1" android:layout_gravity="center_vertical" android:layout_marginRight="@dimen/keyline_1"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/s_medical" android:background="@drawable/card_avatar_bar"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="0dp" android:id="@+id/Medical" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_1" android:layout_marginLeft="@dimen/keyline_1" android:text="Medical Care" android:layout_gravity="center_vertical"  android:drawableLeft="@drawable/icon_medical" android:textColor="#0b8f8f" android:drawablePadding="@dimen/keyline_1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_global_arrow_right_2px"
+                        android:drawablePadding="@dimen/keyline_1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/keyline_1"
+                        android:id="@+id/textView15" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/s_legal" android:background="@drawable/card_avatar_bar"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="0dp" android:id="@+id/Legal" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_1" android:layout_marginLeft="@dimen/keyline_1" android:text="Legal Service" android:layout_gravity="center_vertical"  android:drawableLeft="@drawable/icon_legal" android:drawablePadding="@dimen/keyline_1" android:textColor="#0b8f8f"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_global_arrow_right_2px" android:drawablePadding="@dimen/keyline_1" android:layout_gravity="center_vertical" android:layout_marginRight="@dimen/keyline_1"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/s_mental" android:background="@drawable/card_avatar_bar"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="0dp" android:id="@+id/Mental" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_1" android:layout_marginLeft="@dimen/keyline_1" android:text="Mental Support" android:layout_gravity="center_vertical"  android:drawableLeft="@drawable/icon_mental" android:drawablePadding="@dimen/keyline_1" android:textColor="#0b8f8f"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_global_arrow_right_2px" android:drawablePadding="@dimen/keyline_1" android:layout_gravity="center_vertical" android:layout_marginRight="@dimen/keyline_1"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/s_others" android:background="@drawable/card_avatar_bar"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" >
+                    <TextView android:layout_width="0dp" android:id="@+id/Other" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_1" android:layout_marginLeft="@dimen/keyline_1" android:text="Others" android:layout_gravity="center_vertical"  android:drawableLeft="@drawable/icon_other" android:drawablePadding="@dimen/keyline_1" android:textColor="#0b8f8f"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_global_arrow_right_2px" android:drawablePadding="@dimen/keyline_1" android:layout_gravity="center_vertical" android:layout_marginRight="@dimen/keyline_1"/>
+                </LinearLayout>
+
+                <!--this is very important when scrollview's height is greater than the hegiht of scrollview's childview-->
+                <View android:tag="empty_view" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

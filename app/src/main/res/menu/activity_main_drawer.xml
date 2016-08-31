@@ -4,32 +4,40 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_helping_hand"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_heart"
             android:title="Helping Hand" />
         <item
             android:id="@+id/nav_hand_up"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_heart"
             android:title="Hand Up" />
         <item
             android:id="@+id/nav_take_hand"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_heart"
             android:title="Take My Hand" />
         <item
             android:id="@+id/nav_handy_feed"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_heart"
             android:title="Handy Feed" />
+        <item
+            android:id="@+id/nav_hand_written"
+            android:icon="@drawable/ic_heart"
+            android:title="Hand Written" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="My Hand">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_usr_post"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="My Post" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Change Password" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Open Source Library" />
         </menu>
     </item>
 

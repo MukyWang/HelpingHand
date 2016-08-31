@@ -2,12 +2,117 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Helping Hand"
-        android:id="@+id/textView2"
-        android:layout_marginTop="153dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/main_header"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="281dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="1"
+                android:textColor="#0b8f8f"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etLocation"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:id="@+id/btLocation"
+                android:layout_below="@+id/etNote"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homeless Friend Need"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/etLocation"
+                android:layout_alignParentStart="true"
+                android:layout_column="1"
+                android:textColor="#0b8f8f"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etNeed"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_alignEnd="@+id/etLocation"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/etNeed"
+                android:layout_alignParentStart="true"
+                android:layout_column="1"
+                android:textColor="#0b8f8f"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etNote"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/etNeed"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/btSubmit"
+                android:layout_below="@+id/etNote"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                 />
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
 </RelativeLayout>
